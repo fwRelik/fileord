@@ -1,5 +1,5 @@
 {
-	"name": "fileord",
+	"name": "@fwrelik/fileord",
 	"version": "0.1.0",
 	"description": "To rename file in directory",
 	"main": "index.js",
