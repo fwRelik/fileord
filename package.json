@@ -1,0 +1,37 @@
+{
+	"name": "fileord",
+	"version": "0.1.0",
+	"description": "To rename file in directory",
+	"main": "index.js",
+	"type": "module",
+	"bin": {
+		"fileord": "index.js"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/fwRelik/fileord.git"
+	},
+	"keywords": [
+		"file",
+		"file",
+		"order",
+		"rename",
+		"file"
+	],
+	"author": "fwRelik",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/fwRelik/fileord/issues"
+	},
+	"homepage": "https://github.com/fwRelik/fileord#readme",
+	"dependencies": {
+		"commander": "^10.0.1",
+		"uuid": "^9.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.1.2"
+	}
+}
