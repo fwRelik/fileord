@@ -4,7 +4,7 @@ import { program } from 'commander';
 import { Affix } from './affix.js';
 
 const bootstrap = async () => {
-	program.version('0.1.0', '-v, --version', 'Version');
+	program.version('0.1.1', '-v, --version', 'Version');
 
 	program
 		.option('-pre, --prefix <value>', 'Prefix before filename', '')

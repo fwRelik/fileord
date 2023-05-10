@@ -1,14 +1,14 @@
 {
 	"name": "@fwrelik/fileord",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "To rename file in directory",
-	"main": "index.js",
+	"main": "main.js",
 	"type": "module",
 	"bin": {
-		"fileord": "index.js"
+		"fileord": "main.js"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "node main.js"
 	},
 	"repository": {
 		"type": "git",
