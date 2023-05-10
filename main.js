@@ -5,8 +5,10 @@ import fs from 'fs/promises';
 import { program } from 'commander';
 import { Affix } from './affix.js';
 
+const _version = 'v0.1.3';
+
 const bootstrap = async () => {
-	program.version('0.1.2', '-v, --version', 'Version');
+	program.name('fileord').usage('[options]').version(_version, '-v, --version', 'Version');
 
 	program
 		.option('-pre, --prefix <value>', 'Prefix before filename', '')
