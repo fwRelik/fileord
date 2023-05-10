@@ -1,6 +1,6 @@
 {
 	"name": "@fwrelik/fileord",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "To rename file in directory",
 	"main": "main.js",
 	"type": "module",

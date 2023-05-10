@@ -1,10 +1,12 @@
+#!/usr/bin/env node
+
 import path from 'path';
 import fs from 'fs/promises';
 import { program } from 'commander';
 import { Affix } from './affix.js';
 
 const bootstrap = async () => {
-	program.version('0.1.1', '-v, --version', 'Version');
+	program.version('0.1.2', '-v, --version', 'Version');
 
 	program
 		.option('-pre, --prefix <value>', 'Prefix before filename', '')
