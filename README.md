@@ -3,7 +3,7 @@
 ## Installing
 
 ```sh
-> npm i -g fileord
+> npm i -g @fwrelik/fileord
 ```
 
 ## Usage
