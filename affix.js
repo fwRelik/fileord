@@ -22,6 +22,7 @@ export class Affix {
 			counter = '';
 		} else name = this.alias ? this.alias : this.filename.replace(/\.[^/.]+$/, '');
 
+		if (this.toExtname) return `${this.prefix}${name}${this.postfix}${counter}${this.toExtname}`;
 		return `${this.prefix}${name}${this.postfix}${counter}${this.extname}`;
 	}
 }

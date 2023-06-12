@@ -5,7 +5,7 @@ import fs from 'fs/promises';
 import { program } from 'commander';
 import { Affix } from './affix.js';
 
-const _version = 'v0.1.3';
+const _version = 'v0.2.0';
 
 const bootstrap = async () => {
 	program.name('fileord').usage('[options]').version(_version, '-v, --version', 'Version');
@@ -15,10 +15,11 @@ const bootstrap = async () => {
 		.option('-post, --postfix <value>', 'Postfix after filename', '')
 		.option('-a, --alias <value>', 'Replacing the current filename', '')
 		.option('-p, --path <value>', 'Directory path', null)
+		.option('-ex, --extenstion <value>', 'File extension', null)
 		.option('--uniq <boolean>', 'Filename is unified, while the current name and alias are ignored', false);
 
 	program.parse();
-	const { prefix, postfix, alias, path: pathName, uniq } = program.opts();
+	const { prefix, postfix, alias, path: pathName, extenstion, uniq } = program.opts();
 	let counter = 1;
 
 	console.log(prefix, postfix, alias, pathName, uniq);
@@ -33,6 +34,7 @@ const bootstrap = async () => {
 		files.map(async filename => {
 			const affix = new Affix({
 				filename,
+				toExtname: extenstion,
 				alias,
 				prefix,
 				postfix,
